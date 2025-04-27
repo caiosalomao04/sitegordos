@@ -1,0 +1,133 @@
+/* Define variáveis de cores usando :root */
+:root {
+  --marrom-claro: #d2b48c; /* Cor principal do site */
+}
+
+/* Estilos gerais do body */
+body {
+  margin: 0; /* Remove margens padrão do navegador */
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  background-color: #fff; /* Fundo branco */
+  color: #333; /* Cor padrão do texto (cinza escuro) */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima para ocupar toda a tela */
+}
+
+/* Container principal da estrutura da página */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: var(--marrom-claro); /* Usa a cor principal */
+  padding: 10px; /* Espaçamento interno */
+}
+
+/* Menu de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Espaço entre logo e links */
+  align-items: center;
+  flex-wrap: wrap; /* Quebra linha em telas menores */
+}
+
+/* Lista de links de navegação */
+.nav-links {
+  list-style: none; /* Remove marcadores de lista */
+  display: flex;
+  gap: 15px; /* Espaço entre os links */
+  padding: 0;
+}
+
+/* Estilo dos links */
+.nav-links li a {
+  text-decoration: none; /* Remove sublinhado */
+  color: #000; /* Cor do texto dos links */
+  font-weight: bold;
+}
+
+/* Tamanho do logo */
+.logo img {
+  height: 50px;
+}
+
+/* Conteúdo principal da página */
+main {
+  padding: 20px;
+  flex: 1; /* Ocupa o espaço restante da tela */
+}
+
+/* Grid para seções de eventos */
+.eventos-destaque {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas */
+  gap: 20px; /* Espaçamento entre as colunas */
+}
+
+/* Imagens dos eventos */
+.eventos-destaque img {
+  width: 100%; /* Imagem ocupa toda a largura do container */
+  height: auto; /* Mantém a proporção original */
+}
+
+/* Rodapé do site */
+footer {
+  background-color: var(--marrom-claro); /* Cor do rodapé */
+  padding: 10px;
+  text-align: center;
+  margin-top: auto; /* Fixa o rodapé no fim da página */
+}
+
+/* Ícones das redes sociais no rodapé */
+.social-icons img {
+  height: 24px;
+  margin: 0 5px;
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Campos de texto e email */
+input[type="text"],
+input[type="email"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botão de envio do formulário */
+input[type="submit"] {
+  background-color: var(--marrom-claro);
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Estilos para telas menores (responsivo) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Itens ficam um embaixo do outro */
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .eventos-destaque {
+    grid-template-columns: 1fr; /* Apenas uma coluna no mobile */
+  }
+}
