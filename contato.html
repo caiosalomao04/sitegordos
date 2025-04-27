@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Define a codificação de caracteres e a responsividade -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título que será exibido na aba do navegador -->
+  <title>Gordos RJ - Contato</title>
+
+  <!-- Vincula o arquivo CSS externo para aplicar os estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Container geral que envolve toda a estrutura da página -->
+  <div class="container">
+
+    <!-- Cabeçalho com logo e navegação -->
+    <header>
+      <nav class="navbar">
+        <!-- Logo do site -->
+        <div class="logo">
+          <img src="imagens/logo.png" alt="Logo Gordos RJ" />
+        </div>
+
+        <!-- Links do menu de navegação -->
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>        <!-- Página inicial -->
+          <li><a href="sobre.html">Sobre</a></li>       <!-- Página sobre -->
+          <li><a href="servicos.html">Carecas</a></li>  <!-- Página de eventos -->
+          <li><a href="contato.html">Contato</a></li>   <!-- Página atual -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal com formulário de contato -->
+    <main>
+      <section>
+        <!-- Título da seção de contato -->
+        <h1>Entre em Contato</h1>
+
+        <!-- Formulário simples com método POST -->
+        <form action="#" method="post">
+          <!-- Campo para o nome do usuário -->
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <!-- Campo para o e-mail do usuário -->
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <!-- Botão de envio do formulário -->
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé padrão com redes sociais -->
+    <footer>
+      <p>&copy; 2025 Gordos RJ. Todos os direitos reservados.</p>
+
+      <!-- Ícones de redes sociais -->
+      <div class="social-icons">
+        <img src="imagens/facebook.png" alt="Facebook" />
+        <img src="imagens/instagram.png" alt="Instagram" />
+        <img src="imagens/twitter.png" alt="Twitter" />
+      </div>
+    </footer>
+
+  </div> <!-- Fim do container principal -->
+</body>
+</html>
